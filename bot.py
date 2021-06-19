@@ -42,8 +42,9 @@ async def main_buttons(message: types.Message):
             await message.answer(text="@Mutsv_A", reply_markup=keyboard)
         elif message.text == BUTTONS_MAIN[2]:  # TODO: загрузить финальный ролик на ютуб и добавить сюда ссылку
             await message.answer(text="*тут будет ссылка на ютуб ролик*")
-        elif message.text == BUTTONS_MAIN[3]:  # TODO: загрузить финальную пдфку на гугл диск и добавить сюда ссылку
-            await message.answer(text="Перейдите по ссылке↓\n*тут будет ссылка на гугл док*")
+        elif message.text == BUTTONS_MAIN[3]:
+            await message.answer(text="Перейдите по ссылке↓\nhttps://drive.google.com/file/"
+                                      "d/10Rj7yXdn2riEJOy8XiII-B5L_GS4DPEY/view?usp=sharing")
             # await bot.send_document(document=presentation, chat_id=message.chat.id)
         elif message.text == BUTTONS_MAIN[4]:
             buttons = [types.InlineKeyboardButton(text="Купить на Ozon", url="https://www.ozon.ru/product/"
