@@ -75,7 +75,7 @@ async def book_buttons(call: types.CallbackQuery):
                 for i in photos:
                     await bot.send_document(document=i, chat_id=call.message.chat.id)
             except FileNotFoundError as fe:
-                await call.message.answer("Не получилось найти изображеня")
+                await call.message.answer("Не получилось найти изображения")
                 print(f"[ERROR]: {fe}")
         elif call.data == BUTTONS_BOOK[2]:
             buttons = [types.InlineKeyboardButton(text=BUTTONS_NAVIGATION[i],
