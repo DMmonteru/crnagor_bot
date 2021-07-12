@@ -40,8 +40,8 @@ async def main_buttons(message: types.Message):
             keyboard.add(types.InlineKeyboardButton(text="Адалета на Bēhance",
                                                     url="https://www.behance.net/adaletamutsevi"))
             await message.answer(text="@Mutsv_A", reply_markup=keyboard)
-        elif message.text == BUTTONS_MAIN[2]:  # TODO: загрузить финальный ролик на ютуб и добавить сюда ссылку
-            await message.answer(text="*тут будет ссылка на ютуб ролик*")
+        elif message.text == BUTTONS_MAIN[2]:
+            await message.answer(text="https://disk.yandex.ru/i/g-GEbdot8g2LZg")
         elif message.text == BUTTONS_MAIN[3]:
             await message.answer(text="Перейдите по ссылке↓\nhttps://drive.google.com/file/"
                                       "d/10Rj7yXdn2riEJOy8XiII-B5L_GS4DPEY/view?usp=sharing")
